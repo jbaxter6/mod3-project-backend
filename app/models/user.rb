@@ -17,14 +17,12 @@ class User < ApplicationRecord
     validates :age, presence: true, numericality: { only_integer: true }
     validates :gender, presence: true, inclusion: { in: ("male", "female", "non-binary") }, :message => "please only enter male, female or non-binary"
     #validates_inclusion_of :gender, :in => ( "male", "female", "non-binary" ), :message => "please only enter male, female or non-binary"
-    validates :smoker, presence: true, inclusion: { in: ("yes", "no") }, :message => "please only yes or no"
-    validates :has_kids, presence: true, inclusion: { in: ("yes", "no") }, :message => "please only yes or no"
+    validates :smoker, presence: true, inclusion: { in: ("yes", "no") }, :message => "please only enter yes or no"
+    validates :has_kids, presence: true, inclusion: { in: ("yes", "no") }, :message => "please only enter yes or no"
     validates :tag_line, presence: true, :maximum => 100, :message => "less than 100 characters please"
     #validates_length_of :last_name, :maximum => 30, :message => "less than %d if you don't mind"
-    validates_inclusion_of :image, :in => ( jpg gif png ), :message => "Please upload a jpg, gif or png"
+    validates_inclusion_of :image, :in => ( jpg gif png ), :message => "please upload a jpg, gif or png only"
 
-    # validates :name, presence: true, uniqueness: true
-    # validates :ingredients, presence: true
 
 
 end

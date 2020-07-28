@@ -1,7 +1,7 @@
 class CreateInterests < ActiveRecord::Migration[6.0]
   def change
     create_table :interests do |t|
-      t.string :interest
+      t.string :name
       t.timestamps
     end
   end
