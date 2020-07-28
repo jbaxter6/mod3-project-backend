@@ -9,15 +9,15 @@ User.destroy_all
 Interest.destroy_all
 Preference.destroy_all
 
-    "users": [
+    users = [
         {
             "id": 1,
             "name": "Anita Cocktail",
             "age": 27,
             "gender": "female",
             "smoker": "yes",
-            "hasKids": "yes",
-            "tagline": "I'm ready to find the one".,
+            "has_kids": "yes",
+            "tagline": "I'm ready to find the one.",
             "image": "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
         },
 
@@ -27,8 +27,8 @@ Preference.destroy_all
             "age": 29,
             "gender": "male",
             "smoker": "no",
-            "hasKids": "no",
-            "tagline": "Willing to lie about how we met".,
+            "has_kids": "no",
+            "tagline": "Willing to lie about how we met.",
             "image": "https://images.unsplash.com/photo-1546434946-3e8a5564945d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
         },
 
@@ -38,9 +38,9 @@ Preference.destroy_all
             "age": 26,
             "gender": "female",
             "smoker": "no",
-            "hasKids": "yes",
+            "has_kids": "yes",
             "tagline": "Kiss me and buy me tacos.",
-            "image": "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            "image": "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
         },
 
         {
@@ -49,8 +49,8 @@ Preference.destroy_all
             "age": 32,
             "gender": "male",
             "smoker": "no",
-            "hasKids": "no",
-            "tagline": "I'm smart and witty, looking for someone to play video games with."
+           "has_kids": "no",
+            "tagline": "I'm smart and witty, looking for someone to play video games with.",
             "image": "https://images.unsplash.com/photo-1567601266452-97420092c012?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
         },
 
@@ -60,8 +60,8 @@ Preference.destroy_all
             "age": 30,
             "gender": "female",
             "smoker": "no",
-            "hasKids": "no",
-            "tagline": "Seeking someone to do life with".,
+           "has_kids": "no",
+            "tagline": "Seeking someone to do life with.",
             "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
         },
 
@@ -71,9 +71,9 @@ Preference.destroy_all
             "age": 45,
             "gender": "male",
             "smoker": "yes",
-            "hasKids": "yes",
-            "tagline": "In my mind I sing just like Sinatra".,
-            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+            "has_kids": "yes",
+            "tagline": "In my mind I sing just like Sinatra.",
+            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
         },
 
         {
@@ -82,7 +82,7 @@ Preference.destroy_all
             "age": 24,
             "gender": "female",
             "smoker": "yes",
-            "hasKids": "no",
+            "has_kids": "no",
             "tagline": "I am thankful for laughter, except when milk comes out of my nose!",
             "image": "https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=562&q=80"
         },
@@ -93,7 +93,7 @@ Preference.destroy_all
             "age": 26,
             "gender": "male",
             "smoker": "no",
-            "hasKids": "yes",
+            "has_kids": "yes",
             "tagline": "A Gentleman and A Scholar.",
             "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
         },
@@ -104,7 +104,7 @@ Preference.destroy_all
             "age": 28 ,
             "gender": "female",
             "smoker": "yes",
-            "hasKids": "no",
+            "has_kids": "no",
             "tagline": "Looking for my Netflix and Chill.",
             "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
         },
@@ -115,7 +115,7 @@ Preference.destroy_all
             "age": 40,
             "gender": "male",
             "smoker": "no",
-            "hasKids": "yes",
+            "has_kids": "yes",
             "tagline": "I pay my mortgage and I wear socks that match.",
             "image": "https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         },
@@ -134,13 +134,43 @@ Preference.destroy_all
  interests.each {|interest| Interest.create(name: interest)}   
 puts "Interests was created"
 
-preferences = ["male", "female", "both"]
+preferences =  [ { sex: "female"}, {sex: "male"},{sex: "non-binary"} ]
+female = Preference.create(sex: "female")
+male = Preference.create(sex: "male")
+other = Preference.create(sex: "non-binary")
+
+anita = users[0]
+kumar = users[1]
+sasha = users[2]
+jay = users[3]
+melody = users[4]
+chad = users[5]
+steph = users[6]
+brett = users[7]
+saman = users[8]
+george = users[9]
 
 
-10.times do |x|
-    UserInterest.create(user: User.all.sample.unique, interest: Interest.all.sample.unique)
-end
+# UserPreference.create(male.id, anita.id)
+# UserPreference.create(female.id, kumar.id)
+# UserPreference.create(male.id, sasha.id)
+# UserPreference.create(female.id, jay)
+# UserPreference.create(male, melody)
+# UserPreference.create(female, chad)
+# UserPreference.create(male, steph)
+# UserPreference.create(female, brett)
+# UserPreference.create(female, saman)
+# UserPreference.create(male, george)
 
-10.times do |x|
-    UserPreference.create()
-end
+
+
+
+
+
+# 10.times do |x|
+#     UserInterest.create(user: User.all.sample, interest_id: Interest.all.sample)
+# end
+
+# UserPreference.create(users.id preferences.id)
+# puts "preferences and interests created"
+
