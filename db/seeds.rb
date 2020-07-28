@@ -120,6 +120,10 @@ Preference.destroy_all
             "image": "https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         },
     ]
+    users.each do |user|
+        User.create(user)
+    end
+        puts "Users were created"
 
     interests = 
     ["exercise", "cooking", "hiking", "photography", "knitting", "family-oriented", "introvert", "extrovert", "music", "traveling",
@@ -127,6 +131,16 @@ Preference.destroy_all
         "sports", "programming", "blogging", "dancing", "texter", "talker", "gardening", "sewing", "knitting", "skateboarding", "shoppers", 
         "movie lover"]
  
-    
-
+ interests.each {|interest| Interest.create(name: interest)}   
 puts "Interests was created"
+
+preferences = ["male", "female", "both"]
+
+
+10.times do |x|
+    UserInterest.create(user: User.all.sample.unique, interest: Interest.all.sample.unique)
+end
+
+10.times do |x|
+    UserPreference.create()
+end
