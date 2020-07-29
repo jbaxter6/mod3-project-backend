@@ -13138,3 +13138,312 @@ Processing by Api::V1::UsersController#index as */*
 Completed 200 OK in 198ms (Views: 129.3ms | ActiveRecord: 68.8ms | Allocations: 27549)
 
 
+Started GET "/api/v1/users" for ::1 at 2020-07-29 14:31:47 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (92.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+Completed 200 OK in 330ms (Views: 6.6ms | ActiveRecord: 248.1ms | Allocations: 7053)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mInterest Load (1.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  [1m[36mPreference Load (0.6ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 1], ["name", "Anita Cocktail"], ["age", 27], ["gender", "female"], ["smoker", "yes"], ["has_kids", "yes"], ["tagline", "I'm ready to find the one."], ["image", "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"], ["created_at", "2020-07-29 18:33:40.676720"], ["updated_at", "2020-07-29 18:33:40.676720"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 2], ["name", "Kumar Joseph"], ["age", 29], ["gender", "male"], ["smoker", "no"], ["has_kids", "no"], ["tagline", "Willing to lie about how we met."], ["image", "https://images.unsplash.com/photo-1546434946-3e8a5564945d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"], ["created_at", "2020-07-29 18:33:40.691089"], ["updated_at", "2020-07-29 18:33:40.691089"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 3], ["name", "Sasha Buttercup"], ["age", 26], ["gender", "female"], ["smoker", "no"], ["has_kids", "yes"], ["tagline", "Kiss me and buy me tacos."], ["image", "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"], ["created_at", "2020-07-29 18:33:40.700651"], ["updated_at", "2020-07-29 18:33:40.700651"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 4], ["name", "Jay Smitty"], ["age", 32], ["gender", "male"], ["smoker", "no"], ["has_kids", "no"], ["tagline", "I'm smart and witty, looking for someone to play video games with."], ["image", "https://images.unsplash.com/photo-1567601266452-97420092c012?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"], ["created_at", "2020-07-29 18:33:40.705143"], ["updated_at", "2020-07-29 18:33:40.705143"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 5], ["name", "Melody Fierce"], ["age", 30], ["gender", "female"], ["smoker", "no"], ["has_kids", "no"], ["tagline", "Seeking someone to do life with."], ["image", "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"], ["created_at", "2020-07-29 18:33:40.710880"], ["updated_at", "2020-07-29 18:33:40.710880"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 6], ["name", "Chad Brown"], ["age", 45], ["gender", "male"], ["smoker", "yes"], ["has_kids", "yes"], ["tagline", "In my mind I sing just like Sinatra."], ["image", "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"], ["created_at", "2020-07-29 18:33:40.715416"], ["updated_at", "2020-07-29 18:33:40.715416"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 7], ["name", "Stephanie Grace"], ["age", 24], ["gender", "female"], ["smoker", "yes"], ["has_kids", "no"], ["tagline", "I am thankful for laughter, except when milk comes out of my nose!"], ["image", "https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=562&q=80"], ["created_at", "2020-07-29 18:33:40.719117"], ["updated_at", "2020-07-29 18:33:40.719117"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 8], ["name", "Brett Harmony"], ["age", 26], ["gender", "male"], ["smoker", "no"], ["has_kids", "yes"], ["tagline", "A Gentleman and A Scholar."], ["image", "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"], ["created_at", "2020-07-29 18:33:40.723608"], ["updated_at", "2020-07-29 18:33:40.723608"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 9], ["name", "Samantha Ohh"], ["age", 28], ["gender", "female"], ["smoker", "yes"], ["has_kids", "no"], ["tagline", "Looking for my Netflix and Chill."], ["image", "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"], ["created_at", "2020-07-29 18:33:40.747062"], ["updated_at", "2020-07-29 18:33:40.747062"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("id", "name", "age", "gender", "smoker", "has_kids", "tagline", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["id", 10], ["name", "George Hamilton"], ["age", 40], ["gender", "male"], ["smoker", "no"], ["has_kids", "yes"], ["tagline", "I pay my mortgage and I wear socks that match."], ["image", "https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"], ["created_at", "2020-07-29 18:33:40.753591"], ["updated_at", "2020-07-29 18:33:40.753591"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (1.3ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "exercise"], ["created_at", "2020-07-29 18:33:40.779405"], ["updated_at", "2020-07-29 18:33:40.779405"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.7ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "cooking"], ["created_at", "2020-07-29 18:33:40.789834"], ["updated_at", "2020-07-29 18:33:40.789834"]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (5.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "hiking"], ["created_at", "2020-07-29 18:33:40.801292"], ["updated_at", "2020-07-29 18:33:40.801292"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (1.4ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "photography"], ["created_at", "2020-07-29 18:33:40.814413"], ["updated_at", "2020-07-29 18:33:40.814413"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (20.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (8.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "knitting"], ["created_at", "2020-07-29 18:33:40.824877"], ["updated_at", "2020-07-29 18:33:40.824877"]]
+  [1m[35m (27.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "family-oriented"], ["created_at", "2020-07-29 18:33:40.887327"], ["updated_at", "2020-07-29 18:33:40.887327"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (3.9ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "introvert"], ["created_at", "2020-07-29 18:33:40.896168"], ["updated_at", "2020-07-29 18:33:40.896168"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "extrovert"], ["created_at", "2020-07-29 18:33:40.905290"], ["updated_at", "2020-07-29 18:33:40.905290"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "music"], ["created_at", "2020-07-29 18:33:40.910522"], ["updated_at", "2020-07-29 18:33:40.910522"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "traveling"], ["created_at", "2020-07-29 18:33:40.914726"], ["updated_at", "2020-07-29 18:33:40.914726"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "art"], ["created_at", "2020-07-29 18:33:40.917846"], ["updated_at", "2020-07-29 18:33:40.917846"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "gaming"], ["created_at", "2020-07-29 18:33:40.921027"], ["updated_at", "2020-07-29 18:33:40.921027"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (2.9ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "love language"], ["created_at", "2020-07-29 18:33:40.925096"], ["updated_at", "2020-07-29 18:33:40.925096"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "liberal"], ["created_at", "2020-07-29 18:33:40.934008"], ["updated_at", "2020-07-29 18:33:40.934008"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "conservative"], ["created_at", "2020-07-29 18:33:40.936867"], ["updated_at", "2020-07-29 18:33:40.936867"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "moderate"], ["created_at", "2020-07-29 18:33:40.940122"], ["updated_at", "2020-07-29 18:33:40.940122"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "animal lover"], ["created_at", "2020-07-29 18:33:40.943985"], ["updated_at", "2020-07-29 18:33:40.943985"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "volunteering"], ["created_at", "2020-07-29 18:33:40.948830"], ["updated_at", "2020-07-29 18:33:40.948830"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "party lover"], ["created_at", "2020-07-29 18:33:40.953407"], ["updated_at", "2020-07-29 18:33:40.953407"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "religion"], ["created_at", "2020-07-29 18:33:40.969014"], ["updated_at", "2020-07-29 18:33:40.969014"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "sports"], ["created_at", "2020-07-29 18:33:40.973060"], ["updated_at", "2020-07-29 18:33:40.973060"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.8ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "programming"], ["created_at", "2020-07-29 18:33:40.976188"], ["updated_at", "2020-07-29 18:33:40.976188"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.6ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "blogging"], ["created_at", "2020-07-29 18:33:40.980829"], ["updated_at", "2020-07-29 18:33:40.980829"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "dancing"], ["created_at", "2020-07-29 18:33:40.987053"], ["updated_at", "2020-07-29 18:33:40.987053"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "texter"], ["created_at", "2020-07-29 18:33:40.990820"], ["updated_at", "2020-07-29 18:33:40.990820"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (1.4ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "talker"], ["created_at", "2020-07-29 18:33:40.996043"], ["updated_at", "2020-07-29 18:33:40.996043"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "gardening"], ["created_at", "2020-07-29 18:33:41.003167"], ["updated_at", "2020-07-29 18:33:41.003167"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "sewing"], ["created_at", "2020-07-29 18:33:41.007461"], ["updated_at", "2020-07-29 18:33:41.007461"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "knitting"], ["created_at", "2020-07-29 18:33:41.010510"], ["updated_at", "2020-07-29 18:33:41.010510"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "skateboarding"], ["created_at", "2020-07-29 18:33:41.014904"], ["updated_at", "2020-07-29 18:33:41.014904"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "shoppers"], ["created_at", "2020-07-29 18:33:41.018352"], ["updated_at", "2020-07-29 18:33:41.018352"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "movie lover"], ["created_at", "2020-07-29 18:33:41.022104"], ["updated_at", "2020-07-29 18:33:41.022104"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPreference Create (12.1ms)[0m  [1m[32mINSERT INTO "preferences" ("sex", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["sex", "female"], ["created_at", "2020-07-29 18:33:41.040179"], ["updated_at", "2020-07-29 18:33:41.040179"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPreference Create (0.5ms)[0m  [1m[32mINSERT INTO "preferences" ("sex", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["sex", "male"], ["created_at", "2020-07-29 18:33:41.057583"], ["updated_at", "2020-07-29 18:33:41.057583"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (4.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPreference Create (0.3ms)[0m  [1m[32mINSERT INTO "preferences" ("sex", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["sex", "non-binary"], ["created_at", "2020-07-29 18:33:41.063527"], ["updated_at", "2020-07-29 18:33:41.063527"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPreference Load (0.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (1.0ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["preference_id", 1], ["created_at", "2020-07-29 18:33:41.142729"], ["updated_at", "2020-07-29 18:33:41.142729"]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPreference Load (0.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (1.1ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["preference_id", 2], ["created_at", "2020-07-29 18:33:41.160828"], ["updated_at", "2020-07-29 18:33:41.160828"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPreference Load (0.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (0.3ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["preference_id", 2], ["created_at", "2020-07-29 18:33:41.177566"], ["updated_at", "2020-07-29 18:33:41.177566"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPreference Load (0.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (0.3ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["preference_id", 1], ["created_at", "2020-07-29 18:33:41.187157"], ["updated_at", "2020-07-29 18:33:41.187157"]]
+  [1m[35m (15.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPreference Load (0.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (0.4ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["preference_id", 2], ["created_at", "2020-07-29 18:33:41.212185"], ["updated_at", "2020-07-29 18:33:41.212185"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mPreference Load (0.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (0.3ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["preference_id", 1], ["created_at", "2020-07-29 18:33:41.219132"], ["updated_at", "2020-07-29 18:33:41.219132"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mPreference Load (2.6ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (0.5ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["preference_id", 2], ["created_at", "2020-07-29 18:33:41.232049"], ["updated_at", "2020-07-29 18:33:41.232049"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPreference Load (0.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (0.3ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["preference_id", 1], ["created_at", "2020-07-29 18:33:41.240818"], ["updated_at", "2020-07-29 18:33:41.240818"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mPreference Load (0.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (0.2ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["preference_id", 3], ["created_at", "2020-07-29 18:33:41.249012"], ["updated_at", "2020-07-29 18:33:41.249012"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPreference Load (0.1ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUserPreference Create (0.2ms)[0m  [1m[32mINSERT INTO "user_preferences" ("user_id", "preference_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["preference_id", 3], ["created_at", "2020-07-29 18:33:41.255041"], ["updated_at", "2020-07-29 18:33:41.255041"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMatch Create (0.9ms)[0m  [1m[32mINSERT INTO "matches" ("matcher_id", "matchee_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["matcher_id", 1], ["matchee_id", 2], ["created_at", "2020-07-29 18:33:41.288247"], ["updated_at", "2020-07-29 18:33:41.288247"]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users" for ::1 at 2020-07-29 14:34:02 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (1.9ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (1.3ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (4.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.3ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (1.9ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (21.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (21.6ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (2.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (25.9ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (21.9ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (3.8ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (16.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (14.9ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (19.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (3.5ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (5.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (4.6ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (1.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.3ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+Completed 200 OK in 423ms (Views: 204.3ms | ActiveRecord: 201.1ms | Allocations: 53912)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-07-29 14:34:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/interests" for ::1 at 2020-07-29 14:34:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/interests"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/interests" for ::1 at 2020-07-29 14:35:38 -0400
+Processing by Api::V1::InterestsController#index as HTML
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ app/controllers/api/v1/interests_controller.rb:5:in `index'
+Completed 200 OK in 87ms (Views: 56.4ms | ActiveRecord: 14.4ms | Allocations: 8168)
+
+

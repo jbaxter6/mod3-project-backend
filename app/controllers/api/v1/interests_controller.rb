@@ -2,7 +2,7 @@ class Api::V1::InterestsController < ApplicationController
 
     def index
         interests = Interest.all
-        render json: interest
+        render json: interests
     end
 
     def create
