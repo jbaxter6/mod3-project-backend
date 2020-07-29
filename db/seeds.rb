@@ -160,3 +160,6 @@ Match.create(matcher: anita, matchee: kumar)
 
 # UserPreference.create(users.id preferences.id)
 # puts "preferences and interests created"
+
+
+#testing file
