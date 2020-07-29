@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :gender
       t.string :smoker
       t.string :has_kids
-      t.text :tag_line
+      t.text :tagline
       t.string :image
       t.timestamps
     end
