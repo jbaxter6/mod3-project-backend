@@ -2,7 +2,9 @@ class Api::V1::UsersController < ApplicationController
 
     def index
         users = User.all
-        render json: interests.to_json(include: :interests, :preferences)
+    
+        render json: users, include: [:interests, :preferences]
+        # render json: trainers, only: [:id, :name], include: :pokemons
     end
 
     def show 
@@ -20,6 +22,7 @@ class Api::V1::UsersController < ApplicationController
             render json: user 
         else
             return "entry needed for every field"
+        end
     end
 
     def edit
@@ -39,7 +42,9 @@ class Api::V1::UsersController < ApplicationController
 
 
     private
+
     def user_params 
         params.require(:user).permit(:name, :age, :gender, :smoker, :has_kids, :tagline, :image)
     end
+
 end
