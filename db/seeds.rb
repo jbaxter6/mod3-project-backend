@@ -120,7 +120,7 @@ Preference.destroy_all
             "image": "https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         },
     ]
-
+binding.pry
     interests = 
     ["exercise", "cooking", "hiking", "photography", "knitting", "family-oriented", "introvert", "extrovert", "music", "traveling",
         "art", "gaming", "love language", "liberal", "conservative", "moderate", "animal lover", "volunteering", "party lover", "religion", 
