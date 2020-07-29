@@ -18,7 +18,7 @@ anita = User.create(
             smoker: "yes",
             has_kids: "yes",
             tagline: "I'm ready to find the one".,
-            image: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+            image: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=60"
 )
 kumar = User.create(
             id: 2,
@@ -38,7 +38,7 @@ sasha = User.create(
             smoker: "no",
             has_kids: "yes",
             tagline: "Kiss me and buy me tacos.",
-            image: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            image: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
 )
 jay = User.create(
             id: 4,
@@ -48,7 +48,7 @@ jay = User.create(
             smoker: "no",
             has_kids: "no",
             tagline: "I'm smart and witty, looking for someone to play video games with."
-            image: "https://images.unsplash.com/photo-1567601266452-97420092c012?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+            image: "https://images.unsplash.com/photo-1567601266452-97420092c012?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=60"
 )
 melody = User.create(
             id: 5,
@@ -68,7 +68,7 @@ chad = User.create(
             smoker: "yes",
             has_kids: "yes",
             tagline: "In my mind I sing just like Sinatra".,
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=60",
 )
 stephanie = User.create(
             id: 7,
@@ -78,7 +78,7 @@ stephanie = User.create(
             smoker: "yes",
             has_kids: "no",
             tagline: "I am thankful for laughter, except when milk comes out of my nose!",
-            image: "https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=562&q=80"
+            image: "https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 )
 brett = User.create(
             id: 8,
@@ -88,7 +88,7 @@ brett = User.create(
             smoker: "no",
             has_kids: "yes",
             tagline: "A Gentleman and A Scholar.",
-            image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+            image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=60"
 )
 samantha = User.create(
             id: 9,
@@ -108,7 +108,7 @@ george = User.create(
             smoker: "no",
             has_kids: "yes",
             tagline: "I pay my mortgage and I wear socks that match.",
-            image: "https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+            image: "https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 )
 
 
