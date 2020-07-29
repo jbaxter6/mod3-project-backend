@@ -37,7 +37,7 @@ sasha = User.create(
     smoker: "no",
     has_kids: "yes",
     tagline: "Kiss me and buy me tacos.",
-    image: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "https://images.unsplash.com/photo-1495846101638-bd8e9a23f8ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
 )
 jay = User.create(
     id: 4,
@@ -67,7 +67,7 @@ chad = User.create(
     smoker: "yes",
     has_kids: "yes",
     tagline: "In my mind I sing just like Sinatra.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
 )
 stephanie = User.create(
     id: 7,
@@ -107,7 +107,7 @@ george = User.create(
     smoker: "no",
     has_kids: "yes",
     tagline: "I pay my mortgage and I wear socks that match.",
-    image: "https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+    image: "https://images.unsplash.com/photo-1545559299-a7cf838c4857?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
 )
         puts "Users were created"
 
@@ -154,9 +154,39 @@ Match.create(matcher: anita, matchee: kumar)
 
 
 
-# 10.times do |x|
-#     UserInterest.create(user: User.all.sample, interest_id: Interest.all.sample)
-# end
+10.times do |x|
+   UserInterest.create(user_id: kumar.id, interest_id: Interest.all.sample.id)
+end
+
+10.times do |x|
+    UserInterest.create(user_id: anita.id, interest_id: Interest.all.sample.id)
+ end
+ 10.times do |x|
+    UserInterest.create(user_id: sasha.id, interest_id: Interest.all.sample.id)
+ end
+ 10.times do |x|
+    UserInterest.create(user_id: jay.id, interest_id: Interest.all.sample.id)
+ end
+ 10.times do |x|
+    UserInterest.create(user_id: melody.id, interest_id: Interest.all.sample.id)
+ end
+ 10.times do |x|
+    UserInterest.create(user_id: chad.id, interest_id: Interest.all.sample.id)
+ end
+
+ 10.times do |x|
+    UserInterest.create(user_id: stephanie.id, interest_id: Interest.all.sample.id)
+ end
+ 10.times do |x|
+    UserInterest.create(user_id: brett.id, interest_id: Interest.all.sample.id)
+ end
+ 10.times do |x|
+    UserInterest.create(user_id: george.id, interest_id: Interest.all.sample.id)
+ end
+ 10.times do |x|
+    UserInterest.create(user_id: samantha.id, interest_id: Interest.all.sample.id)
+ end
+
 
 # UserPreference.create(users.id preferences.id)
 # puts "preferences and interests created"
