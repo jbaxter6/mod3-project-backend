@@ -10,7 +10,6 @@ Interest.destroy_all
 Preference.destroy_all
 
 anita = User.create(
-    id: 1,
     name: "Anita Cocktail",
     age: 27,
     gender: "female",
@@ -20,7 +19,6 @@ anita = User.create(
     image: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
 )
 kumar = User.create(
-    id: 2,
     name: "Kumar Joseph",
     age: 29,
     gender: "male",
@@ -30,7 +28,6 @@ kumar = User.create(
     image: "https://images.unsplash.com/photo-1546434946-3e8a5564945d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 )
 sasha = User.create(
-    id: 3,
     name: "Sasha Buttercup",
     age: 26,
     gender: "female",
@@ -40,7 +37,6 @@ sasha = User.create(
     image: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
 )
 jay = User.create(
-    id: 4,
     name: "Jay Smitty",
     age: 32,
     gender: "male",
@@ -50,7 +46,6 @@ jay = User.create(
     image: "https://images.unsplash.com/photo-1567601266452-97420092c012?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
 )
 melody = User.create(
-    id: 5,
     name: "Melody Fierce",
     age: 30,
     gender: "female",
@@ -60,7 +55,6 @@ melody = User.create(
     image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 )
 chad = User.create(
-    id: 6,
     name: "Chad Brown",
     age: 45,
     gender: "male",
@@ -70,7 +64,6 @@ chad = User.create(
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
 )
 stephanie = User.create(
-    id: 7,
     name: "Stephanie Grace",
     age: 24,
     gender: "female",
@@ -80,7 +73,6 @@ stephanie = User.create(
     image: "https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=562&q=80"
 )
 brett = User.create(
-    id: 8,
     name: "Brett Harmony",
     age: 26,
     gender: "male",
@@ -90,7 +82,6 @@ brett = User.create(
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
 )
 samantha = User.create(
-    id: 9,
     name: "Samantha Ohh",
     age: 28 ,
     gender: "female",
@@ -100,7 +91,6 @@ samantha = User.create(
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 )
 george = User.create(
-    id: 10,
     name: "George Hamilton",
     age: 40,
     gender: "male",
