@@ -10,6 +10,7 @@ class Match < ApplicationRecord
         User.all.each do |user|
             @matcheeint = user.interests
             @intersection = @matcherinterests & @matcheeint
+        end
 
             if @intersection.size > 3
                 @match = Match.new(matcher_id: params[:user_id], matchee_id: params[:match][:matchee_id])

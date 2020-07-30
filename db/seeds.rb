@@ -45,7 +45,7 @@ jay = User.create(
     tagline: "I'm smart and witty, looking for someone to play video games with.",
     image: "https://images.unsplash.com/photo-1567601266452-97420092c012?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
 )
-melody = User.create
+melody = User.create(
     name: "Melody Fierce",
     age: 30,
     gender: "female",
@@ -151,15 +151,19 @@ end
 10.times do |x|
     UserInterest.create(user_id: anita.id, interest_id: Interest.all.sample.id)
  end
+
  10.times do |x|
     UserInterest.create(user_id: sasha.id, interest_id: Interest.all.sample.id)
  end
+
  10.times do |x|
     UserInterest.create(user_id: jay.id, interest_id: Interest.all.sample.id)
  end
+
  10.times do |x|
     UserInterest.create(user_id: melody.id, interest_id: Interest.all.sample.id)
  end
+
  10.times do |x|
     UserInterest.create(user_id: chad.id, interest_id: Interest.all.sample.id)
  end
@@ -167,12 +171,15 @@ end
  10.times do |x|
     UserInterest.create(user_id: stephanie.id, interest_id: Interest.all.sample.id)
  end
+ 
  10.times do |x|
     UserInterest.create(user_id: brett.id, interest_id: Interest.all.sample.id)
  end
+ 
  10.times do |x|
     UserInterest.create(user_id: george.id, interest_id: Interest.all.sample.id)
  end
+
  10.times do |x|
     UserInterest.create(user_id: samantha.id, interest_id: Interest.all.sample.id)
  end
