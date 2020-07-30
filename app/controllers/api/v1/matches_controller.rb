@@ -11,15 +11,14 @@ class Api::V1::MatchesController < ApplicationController
     end
 
     def new
-        match = Match.new
-        
+        match = Match.new 
     end
 
     def create
-        @matcherinterests = .interests
+        @matcherinterests = matcher.interests
     
         User.all.each do |user|
-            @matcheeint = user.interests
+            @matcheeint = matchee.interests
             @intersection = @matcherinterests & @matcheeint
     
             if @intersection.size > 3
