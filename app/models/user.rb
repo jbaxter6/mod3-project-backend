@@ -16,7 +16,7 @@ class User < ApplicationRecord
     validates :name, presence: true
     validates :age, presence: true, numericality: { only_integer: true }
     #validates :gender, presence: true, inclusion: { in: ["male", "female", "non-binary"] }, :message => "please only enter male, female or non-binary"
-    # #validates_inclusion_of :gender, :in => ( "male", "female", "non-binary" ), :message => "please only enter male, female or non-binary"
+    #validates_inclusion_of :gender, :in => ( "male", "female", "non-binary" ), :message => "please only enter male, female or non-binary"
     #validates :smoker, presence: true, inclusion: { in: ["yes", "no"] }, :message => "please only enter yes or no"
     #validates :has_kids, presence: true, inclusion: { in: ["yes", "no"] }, :message => "please only enter yes or no"
     #validates :tag_line, presence: true, :maximum => 100, :message => "less than 100 characters please"

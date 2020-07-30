@@ -16,9 +16,17 @@ class Api::V1::MatchesController < ApplicationController
     end
 
     def create
-        @match = Match.create(matcher_id: params[:user_id], matchee_id: params[:match][:matchee_id])
-        if match.save
-            render json: match
+        @matcherinterests = .interests
+    
+        User.all.each do |user|
+            @matcheeint = user.interests
+            @intersection = @matcherinterests & @matcheeint
+    
+            if @intersection.size > 3
+                @match = Match.create(matcher_id: params[:user_id], matchee_id: params[:match][:matchee_id])
+                @match.save
+                render json: match
+            end
         end
     end
 
@@ -26,6 +34,10 @@ class Api::V1::MatchesController < ApplicationController
         match = Match.find_by(id: params[:id])
         match.destroy
     end
+end
 
 
+@match = Match.create(matcher_id: params[:user_id], matchee_id: params[:match][:matchee_id])
+if match.save
+    render json: match
 end

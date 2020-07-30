@@ -15114,3 +15114,181 @@ Completed 200 OK in 87ms (Views: 56.4ms | ActiveRecord: 14.4ms | Allocations: 81
   [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" WHERE "interests"."id" = $1 LIMIT $2[0m  [["id", 117], ["LIMIT", 1]]
   [1m[36mUserInterest Create (0.6ms)[0m  [1m[32mINSERT INTO "user_interests" ("user_id", "interest_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["interest_id", 117], ["created_at", "2020-07-29 19:05:14.837990"], ["updated_at", "2020-07-29 19:05:14.837990"]]
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users" for ::1 at 2020-07-29 22:08:33 -0400
+  [1m[35m (14.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (41.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (28.6ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.6ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.7ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.6ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (1.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.7ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.7ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.4ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.4ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.4ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.3ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+Completed 200 OK in 721ms (Views: 532.2ms | ActiveRecord: 132.4ms | Allocations: 63288)
+
+
+Started GET "/users" for ::1 at 2020-07-29 22:13:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/users" for ::1 at 2020-07-29 22:14:05 -0400
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (3.6ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (3.7ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.8ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.5ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.8ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.4ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.4ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.5ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.7ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.4ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+Completed 200 OK in 237ms (Views: 213.8ms | ActiveRecord: 20.3ms | Allocations: 37504)
+
+
+Started GET "/api/v1/interests" for ::1 at 2020-07-29 22:26:21 -0400
+Started GET "/api/v1/users" for ::1 at 2020-07-29 22:26:21 -0400
+  [1m[35m (18.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (118.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::InterestsController#index as */*
+  [1m[36mUser Load (33.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (29.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ app/controllers/api/v1/interests_controller.rb:5:in `index'
+Completed 200 OK in 352ms (Views: 29.8ms | ActiveRecord: 310.7ms | Allocations: 19297)
+
+
+  [1m[36mInterest Load (1.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (4.3ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (1.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (1.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (1.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (0.9ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (18.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (56.1ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (19.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (1.1ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (5.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (73.7ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (113.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (1.3ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (5.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (1.5ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (22.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (23.7ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "user_interests" ON "interests"."id" = "user_interests"."interest_id" WHERE "user_interests"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+  [1m[36mPreference Load (1.2ms)[0m  [1m[34mSELECT "preferences".* FROM "preferences" INNER JOIN "user_preferences" ON "preferences"."id" = "user_preferences"."preference_id" WHERE "user_preferences"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/api/v1/users_controller.rb:6:in `index'
+Completed 200 OK in 1187ms (Views: 526.9ms | ActiveRecord: 565.3ms | Allocations: 68392)
+
+
