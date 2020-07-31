@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       resources :interests
       resources :matches
    resources :preferences
-   resources :user_interests, only: [:edit, :update]
+   resources :user_interests, only: [:create, :edit, :update]
     end
   end
    

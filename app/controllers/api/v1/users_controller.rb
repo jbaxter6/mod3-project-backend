@@ -31,12 +31,17 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def update
-        exercise = Interest.find_by(name: params[:interests][0])
-        byebug 
-        UserInterest.create(user_id: params[:id], interest_id: exercise.id)
-        user = User.find_by(id: params[:id])
-        user.interest.update(user_params)
-        render json: user
+        array = params[:interests]
+        array.map do |interest|
+          Interest.find_by(name:interest)
+        end
+        exercise = Interest.find_by(name:interest)
+    
+        use_int = UserInterest.create(user_id: params[:id], interest_id: array[0].id)
+        # user = User.find_by(id: params[:id])
+
+        # user.interest.update(user_params)
+        render json: use_int
     end
 
     def destroy
